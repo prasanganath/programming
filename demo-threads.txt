@@ -1,0 +1,29 @@
+class multitread extends treads{
+     public void run(){
+       try{
+          System.out.println("Thread " + treads.currenttreads().getId() + "is running");
+       
+       }
+       catch(Exception e){
+        System.out.println("Exception is caught");
+       }
+     }
+}
+
+
+
+
+
+
+
+
+public class demo{
+ public static void main(String[] args){
+ int n=8;
+  for(n=0;n<8;n++){
+   multitread object = new multitread();
+   object.start();
+  }
+ }
+}
+ 
